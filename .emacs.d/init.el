@@ -12,6 +12,7 @@
 (add-to-load-path "elisp" "conf" "public-repos")
 
 ;; add to package archives
+(require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("ELPA" . "http://tromey.com/elpa/"))
@@ -26,3 +27,8 @@
   (setq auto-install-directory "~/.emacs.d/elisp/")
   (auto-install-update-emacswiki-package-name t)
   (auto-install-compatibility-setup))
+
+(defun ruby-mode-hooks ()
+  (when (fboundp 'rinari-minor-mode)
+    (rinari-minor-mode t)))
+(add-hook 'ruby-mode-hook 'ruby-mode-hooks)
