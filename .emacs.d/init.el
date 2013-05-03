@@ -28,7 +28,9 @@
   (auto-install-update-emacswiki-package-name t)
   (auto-install-compatibility-setup))
 
+;; ruby-mode-hook
 (defun ruby-mode-hooks ()
   (when (fboundp 'rinari-minor-mode)
-    (rinari-minor-mode t)))
+    (rinari-minor-mode t))
+  (flymake-ruby-load))
 (add-hook 'ruby-mode-hook 'ruby-mode-hooks)
