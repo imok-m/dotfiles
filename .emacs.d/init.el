@@ -28,9 +28,6 @@
   (auto-install-update-emacswiki-package-name t)
   (auto-install-compatibility-setup))
 
-;; use rinari
-(global-rinari-mode)
-
 ;; ruby-mode-hook
 (defun ruby-mode-hooks ()
   (flymake-ruby-load))
