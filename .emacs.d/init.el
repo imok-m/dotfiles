@@ -16,6 +16,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
 (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("ELPA" . "http://tromey.com/elpa/"))
+(package-initialize)
 
 ;; init-loader
 ;; https://gist.github.com/zqwell/1021706/raw/b9aff51e7e40afa7abb3c7d6ef7708993ad93b04/init-loader.el
