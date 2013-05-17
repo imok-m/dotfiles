@@ -10,3 +10,4 @@
 (define-key global-map (kbd "C-c l") 'toggle-truncate-lines)
 (define-key global-map (kbd "M-C-g") 'grep)
 (define-key global-map (kbd "C-[ M-C-g") 'goto-line)
+(define-key global-map (kbd "C-c t") 'multi-term)
