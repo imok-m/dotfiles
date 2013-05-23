@@ -1,3 +1,5 @@
+;; theme
+(load-theme 'wheatgrass)
 ;; スタートアップメッセージ非表示
 (setq inhibit-startup-screen t)
 ;; ツールバー非表示
