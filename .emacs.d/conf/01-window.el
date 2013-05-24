@@ -10,3 +10,7 @@
 (menu-bar-mode 0)
 ;; 行番号表示
 (global-linum-mode)
+;; 空白強調表示
+(when
+    (boundp 'show-trailing-whitespace)
+  (setq-default show-trailing-whitespace t))
