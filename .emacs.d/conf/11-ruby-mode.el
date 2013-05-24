@@ -1,3 +1,13 @@
+;; ruby-mode-hook
+(defun ruby-mode-hooks ()
+  (flymake-ruby-load))
+(add-hook 'ruby-mode-hook 'ruby-mode-hooks)
+
+;; set auto-mode-alist
+(add-to-list 'auto-mode-alist
+	     '("\\.rake$" . ruby-mode))
+
+;; indent setting
 (setq ruby-deep-indent-paren-style nil)
 (defadvice ruby-indent-line (after unindent-closing-paren activate)
   (let ((column (current-column))
