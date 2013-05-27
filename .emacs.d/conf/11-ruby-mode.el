@@ -1,6 +1,11 @@
 ;; ruby-mode-hook
 (defun ruby-mode-hooks ()
-  (flymake-ruby-load))
+  ;; flymake
+  (flymake-ruby-load)
+  ;; 空白強調表示
+  (when
+      (boundp 'show-trailing-whitespace)
+    (setq show-trailing-whitespace t)))
 (add-hook 'ruby-mode-hook 'ruby-mode-hooks)
 
 ;; set auto-mode-alist
