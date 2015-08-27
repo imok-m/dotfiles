@@ -5,3 +5,5 @@
   "Hooks for Web mode."
   (setq web-mode-markup-indent-offset 2))
 (add-hook 'web-mode-hook 'web-mode-hook)
+(add-hook 'web-mode-hook 'flycheck-mode)
+(add-hook 'web-mode-hook 'highlight-symbol-mode)
