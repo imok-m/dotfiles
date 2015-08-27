@@ -9,7 +9,7 @@
 	    (normal-top-level-add-subdirs-to-load-path))))))
 
 ;; 引数のディレクトリとそのサブディレクトリを load-path に追加
-(add-to-load-path "elisp" "conf" "public-repos")
+(add-to-load-path "elisp" "conf" "public-repos" "el-get/el-get")
 
 ;; add to package archives
 (require 'package)
@@ -24,7 +24,7 @@
 (init-loader-load "~/.emacs.d/conf")
 
 ;; auto-install
-(when (require 'auto-install nil t)
-  (setq auto-install-directory "~/.emacs.d/elisp/")
-  (auto-install-update-emacswiki-package-name t)
-  (auto-install-compatibility-setup))
+;(when (require 'auto-install nil t)
+;  (setq auto-install-directory "~/.emacs.d/elisp/")
+;  (auto-install-update-emacswiki-package-name t)
+;  (auto-install-compatibility-setup))

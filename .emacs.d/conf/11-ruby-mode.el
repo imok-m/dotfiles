@@ -1,12 +1,12 @@
 ;; ruby-mode-hook
 (defun ruby-mode-hooks ()
-  ;; flymake
-  (flymake-ruby-load)
   ;; 空白強調表示
   (when
       (boundp 'show-trailing-whitespace)
     (setq show-trailing-whitespace t)))
 (add-hook 'ruby-mode-hook 'ruby-mode-hooks)
+;; flycheck
+(add-hook 'ruby-mode-hook 'flycheck-mode)
 
 ;; set auto-mode-alist
 (add-to-list 'auto-mode-alist
