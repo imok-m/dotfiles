@@ -5,8 +5,8 @@
       (boundp 'show-trailing-whitespace)
     (setq show-trailing-whitespace t)))
 (add-hook 'ruby-mode-hook 'ruby-mode-hooks)
-;; flycheck
 (add-hook 'ruby-mode-hook 'flycheck-mode)
+(add-hook 'ruby-mode-hook 'highlight-symbol-mode)
 
 ;; set auto-mode-alist
 (add-to-list 'auto-mode-alist

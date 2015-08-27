@@ -8,6 +8,7 @@
 (el-get-bundle auto-complete)
 (el-get-bundle dired+)
 (el-get-bundle flycheck/flycheck :depends (dash pkg-info let-alist cl-lib))
+(el-get-bundle highlight-symbol)
 (el-get-bundle mooz/js2-mode)
 ;(el-get-bundle rinari)
 (el-get-bundle rspec-mode)
