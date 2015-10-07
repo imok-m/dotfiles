@@ -15,3 +15,4 @@
 (el-get-bundle web-mode)
 (el-get-bundle wgrep)
 (el-get-bundle yasnippet)
+(el-get-bundle anything)
