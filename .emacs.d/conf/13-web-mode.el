@@ -1,7 +1,6 @@
 (autoload 'web-mode "web-mode" nil t)
 (add-to-list 'auto-mode-alist '("\\.erb$"   . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?$" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx$" . web-mode))
 (defun web-mode-hook ()
   "Hooks for Web mode."
   (setq web-mode-attr-indent-offset nil)
