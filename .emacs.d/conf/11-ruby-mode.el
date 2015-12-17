@@ -12,6 +12,9 @@
 (add-to-list 'auto-mode-alist
 	     '("\\.rake$" . ruby-mode))
 
+;; don't insert magic-comment
+(defun ruby-mode-set-encoding () nil)
+
 ;; indent setting
 (setq ruby-deep-indent-paren-style nil)
 (defadvice ruby-indent-line (after unindent-closing-paren activate)
